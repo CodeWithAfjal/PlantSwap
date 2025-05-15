@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - PlantSwap</title>
+         <link rel="icon" href="images/logo.avif" type="image/png">
+    <link rel="stylesheet" href="/css/style.css"> <!-- Link to your CSS file -->
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .contact-container { padding: 2rem; background-color: #f4f4f4; border: 2px solid black; border-radius: 20px; padding: 5%; margin: 5%; }
+        /* h2 { text-align: center; color: #4CAF50; } */
+        form { display: flex; flex-direction: column; }
+        label { margin-top: 10px; }
+        input, textarea { padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px; }
+        button { margin-top: 20px; padding: 12px; background-color: #4B6B50; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #45a049; }
+        .contact-info { margin-top: 30px; }
+    </style>
+</head>
+
+<header>
+    <h1><a href="index.html">🌱 PlantSwap</a></h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Shop</a></li>
+            <li><a href="swap.html">Swap Zone</a></li>
+            <li><a href="#about"> About</a></li>
+            <li><a href="contact.html"> Contact</a></li>
+         
+            <li>
+                <a href="cart.html">
+                    Cart <i class="fas fa-shopping-cart"></i>
+                    (<span id="cart-count">0</span>)
+                </a>
+            </li>
+        </ul>
+    </nav>
+  
+</header>
+<body>
+
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name"  placeholder="Enter Your Name">
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email">
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="......"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <p><strong>Email:</strong> support@plantswap.com</p>
+            <p><strong>Phone:</strong> 7873809966</p>
+            <p><strong>Address:</strong> Yellow House, Madanpur, Bhubaneswar</p>
+        </div>
+    </div>
+
+</body>
+<footer>
+    <p>© 2025 PlantSwap</p>
+</footer>
+
+</html>

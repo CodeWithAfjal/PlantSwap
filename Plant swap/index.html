@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantSwap - Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo.avif" type="image/png">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    
+    <header>
+        <h1><a href="index.html">🌱 PlantSwap</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#products">Shop</a></li>
+                <li><a href="swap.html">Swap Zone</a></li>
+                <li><a href="#about"> About</a></li>
+                <li><a href="contact.html"> Contact</a></li>
+                <li><a href="#review">Review</a></li>
+                <li>
+                    <a href="cart.html">
+                        Cart <i class="fas fa-shopping-cart"></i>
+                        (<span id="cart-count">0</span>)
+                    </a>
+                </li>
+            </ul>
+        </nav>
+       
+    </header>
+     <section class="slideshow-container">
+  <div class="slideshow-text-overlay">
+    <h3>"Let’s grow together – one plant, one swap, one story at a time."</h3>
+  </div>
+
+  <img class="plant-slide" src="images/slide4.jpg" alt="Plant 1" style="display: block;">
+  <img class="plant-slide" src="images/slide5.jpg" alt="Plant 2">
+
+   <img class="plant-slide" src="images/slide2.jpg" alt="Plant 3">
+    <img class="plant-slide" src="images/slide5.jpg" alt="Plant 3">
+</section>
+
+    <main id="products">
+      
+        <h2>Our Plants & Products</h2>
+
+        <div class="filters">
+            <input type="search" id="search-input" placeholder="Search by name...">
+            <select id="filter-type">
+                <option value="">All Types</option>
+                <option value="Foliage">Foliage</option>
+                <option value="Succulent">Succulent</option>
+                <option value="Vine">Vine</option>
+                <option value="Tree">Tree</option>
+                <option value="Soil">Soil</option>
+                <option value="Fertilizer">Fertilizer</option>
+                <option value="Pot">Pot</option>
+            </select>
+             <select id="filter-care">
+                <option value="">All Care Levels</option>
+                <option value="Easy">Easy</option>
+                <option value="Medium">Medium</option>
+                <option value="Hard">Hard</option>
+            </select>
+             <select id="filter-size">
+                <option value="">All Sizes</option>
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+            </select>
+        </div>
+     <div id="notification" class="notification">Item Added to Cart</div>
+        <div id="product-list" class="product-grid">
+            <!-- Product cards will be loaded here by JavaScript -->
+        </div>
+    </main>
+
+    <section class="about-us">
+        <div class="container">
+             <h2>Our Story</h2>
+             <div class="about-content">
+                <div class="about-text">
+                    <p>Welcome to Leafy Wonders! We started with a simple passion: sharing the joy and tranquility that plants bring to everyday life. We believe everyone deserves a greener space, no matter the size of their home or level of experience.</p>
+                    <p>We carefully select each plant, ensuring it's healthy and ready to thrive. From popular favorites to unique finds, we're here to help you find the perfect green companion. Let's grow together!</p>
+                </div>
+                <div class="about-image">
+                     <!-- Replace with an image of your shop, team, or a beautiful plant arrangement -->
+                    <img src="/images/storymain.avif" alt="Inside the Leafy Wonders plant shop">
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <section id="about" style="padding: 2rem; background-color: #f4f4f4; border: 2px solid black; border-radius: 20px; padding: 5%; margin: 5%;">
+  <div style="max-width: 800px; margin: auto; text-align: center;">
+    <h2>About PlantSwap</h2>
+    <p>
+      At PlantSwap, we believe in growing green and living clean. Our mission is to make plant parenting easy and joyful by offering a curated selection of indoor plants that suit every lifestyle and space.
+    </p>
+    <p>
+      Whether you're a seasoned plant lover or just getting started, PlantSwap provides healthy, low-maintenance options for homes, offices, and everywhere in between. We also encourage plant swapping to promote sustainability and community connection.
+    </p>
+  </div>
+</section>
+
+
+
+<div class="reviews-container">
+    <h2>Customer Reviews</h2>
+    
+    <form id="reviewForm">
+        <label for="reviewer">Your Name</label>
+        <input type="text" id="reviewer" name="reviewer" required>
+
+        <label for="review">Your Review</label>
+        <textarea id="review" name="review" rows="4" required></textarea>
+
+        <button type="submit">Submit Review</button>
+    </form>
+
+    <div class="reviews-list" id="reviewsList">
+        <!-- Reviews will appear here -->
+    </div>
+</div>
+
+
+    <footer>
+        <p>© 2025 PlantSwap</p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

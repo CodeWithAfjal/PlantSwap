@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantSwap - Swap Zone</title>
+    <link rel="stylesheet" href="css/style.css">
+         <link rel="icon" href="images/logo.avif" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+         <h1><a href="index.html">🌱 PlantSwap</a></h1>
+        <nav>
+             <ul>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="swap.html">Swap Zone</a></li>
+                <li><a href="#about">About</a></li>
+             
+                <li><a href="contact.html"> Contact</a></li>
+              
+                <li>
+                    <a href="cart.html">
+                        Cart <i class="fas fa-shopping-cart"></i>
+                        (<span id="cart-count">0</span>)
+                    </a>
+                </li>
+            </ul>
+        </nav>
+      
+    </header>
+
+    <main>
+        <h2>Swap Plants Locally</h2>
+        <p>Enter your ZIP code to find plants available for trade near you. (Demo uses sample data)</p>
+
+        <div class="swap-finder">
+            <label for="zip-input">Your ZIP Code:</label>
+            <input type="text" id="zip-input" placeholder="e.g., 90210">
+            <button id="find-swaps-btn">Find Swaps</button>
+        </div>
+
+        <div id="swap-results" class="swap-grid">
+            <!-- Swap listings will be loaded here -->
+            <p>Enter a ZIP code to see nearby swaps.</p>
+        </div>
+    </main>
+    <section id="about" style="padding: 2rem; background-color: #f4f4f4; border: 1px solid black; border-radius: 20px; padding: 5%; margin: 5%;">
+        <div style="max-width: 800px; margin: auto; text-align: center;">
+          <h2>About PlantSwap</h2>
+          <p>
+            At PlantSwap, we believe in growing green and living clean. Our mission is to make plant parenting easy and joyful by offering a curated selection of indoor plants that suit every lifestyle and space.
+          </p>
+          <p>
+            Whether you're a seasoned plant lover or just getting started, PlantSwap provides healthy, low-maintenance options for homes, offices, and everywhere in between. We also encourage plant swapping to promote sustainability and community connection.
+          </p>
+        </div>
+      </section>
+
+    <footer>
+        <p>© 2025 PlantSwap</p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

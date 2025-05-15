@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantSwap - Your Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+       <link rel="icon" href="images/logo.avif" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+     <header>
+        <h1><a href="index.html">🌱 PlantSwap</a></h1>
+        <nav>
+             <ul>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="swap.html">Swap Zone</a></li>
+                <li><a href="#about"> About</a></li>
+                <li><a href="contact.html"> Contact</a></li>
+             
+                <li>
+                    <a href="cart.html">
+                        Cart <i class="fas fa-shopping-cart"></i>
+                        (<span id="cart-count">0</span>)
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button> -->
+    </header>
+
+    <main>
+        <h2>Your Shopping Cart</h2>
+
+        <div id="cart-items-container">
+            <!-- Cart items will be loaded here -->
+             <p id="empty-cart-message">Your cart is empty.</p>
+        </div>
+
+        <div id="cart-summary">
+            <h3>Total: $<span id="cart-total">0.00</span></h3>
+            <button id="checkout-btn" class="button primary" >Proceed to Checkout</button>
+        </div>
+    </main>
+
+     <footer>
+        <p>© 2025 PlantSwap</p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
